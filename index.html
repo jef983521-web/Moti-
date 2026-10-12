@@ -452,8 +452,7 @@
                 messageList.classList.remove('hidden');
                 chatContainer.classList.remove('justify-center');
                 chatContainer.classList.add('justify-start');
-            }
-
+        }
             const currentText = text;
             userInput.value = '';
 
@@ -536,7 +535,7 @@
             if (e.key === 'Enter' && !e.shiftKey) {
                 e.preventDefault();
                 sendMessage();
-            }
+                }
         });
 
         sendBtn.addEventListener('click', sendMessage);
